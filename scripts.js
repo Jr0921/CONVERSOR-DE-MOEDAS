@@ -2,14 +2,12 @@ const button = document.getElementById('converter-butao')
 const select = document.getElementById('currency-selec')
 const dolar = 5.2
 const euro = 5.9
-const bitcoin = 0.0000078
+const bitcoin = 147456.13
 
 const converterValor = () => {
     const inputReais = document.getElementById('input-real').value
     const valorReal = document.getElementById('valor-real')
     const valorDolar = document.getElementById('valor-dolar')
-
-
 
     valorReal.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
@@ -31,14 +29,12 @@ const converterValor = () => {
     }
 
     if (select.value === "₿ Bitcoin") {
-        valorDolar.innerHTML = new Intl.NumberFormat("en-US", {
+        valorDolar.innerHTML = new Intl.NumberFormat("XBT", {
             style: "currency",
             currency: "BTC",
         }).format(inputReais / bitcoin)
     }
 }
-
-
 
 changeCurrency = () => {
     const paragrafo = document.getElementById("paragrafo")

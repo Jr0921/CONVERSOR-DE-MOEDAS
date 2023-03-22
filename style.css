@@ -9,25 +9,24 @@
 }
 
 body {
-    background-color: #E5E5E5;
-    ;
+    background-image: url(img\ fundo.jpg);
 }
 
 .container {
     width: 375px;
-    background-color: #F4F4F4;
+    background-color: black;
     margin: 0 auto;
-    margin-top: 100PX;
+    margin-top: 100px;
 }
 
 header {
-    background-color: #1B83E2;
+    background-color: #daa520;
     height: 66px;
 }
 
 h1 {
     font-size: 24px;
-    color: #F4F4F4;
+    color: white;
     text-align: center;
     padding-top: 22px;
 }
@@ -38,7 +37,12 @@ main {
 
 label {
     font-size: 14px;
-    color: #777777;
+    color: #daa520;
+    padding-left: 120px;
+}
+
+.valor{
+    padding-left: 150px;
 }
 
 select {
@@ -71,7 +75,7 @@ input {
 }
 
 button {
-    background: #1B83E2;
+    background: #daa520;
     border-radius: 25px;
     height: 48px;
     cursor: pointer;
